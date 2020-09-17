@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Hitech Service</title>
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -27,6 +27,7 @@
               <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">Клиентам</a></li>
               </ul>
@@ -54,12 +55,7 @@
                 <input type="text" name="phone" id="phone" placeholder="Телефон">
                 <input type="text" name="model" id="model" placeholder="Модель">
                 <div class="form_disrep">Неисправность</div>
-                <select name="disrepair" id="disrepair">
-                  <option value="">Разбито только переднее стекло</option>
-                  <option value="">Разбито только заднее стекло</option>
-                  <option value="">Утопил телефон</option>
-                  <option value="">Заблокировался телефон</option>
-                </select>
+                <textarea class="disrepair" name="disrepair" id="" cols="50" rows="8"></textarea>
                 <input class="form_btn" type="button" value="Отправить">
               </form>
             </div>
@@ -108,30 +104,240 @@
       <div class="row">
         <div class="col-md-10 offset-md-1">
           <div class="section_3_decr">
-            Наша миссия - сделать услугу по ремонту мобильных устройств не только качественной и оперативной, но и максимально прозрачной, открытой и комфортной для клиента.
+            <strong>Наша миссия</strong> <br> Сделать услугу по ремонту мобильных устройств не только качественной и
+            оперативной, но и
+            максимально прозрачной, открытой и комфортной для клиента.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="section_4">
+  <section class="section_4">
     <div class="container">
       <div class="section_4_title">Причины выбрать наш сервис</div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="section_4_item">
             <div class="item_circle">1</div>
-            <div class="item_title">Внимание</div>
-            <div class="item_decr">Вникаем в проблему заказчика. Даем рекомендации о целесообразности ремонта.</div>
+            <div class="item_decr">
+              <div class="item_title">Внимание</div>
+              <div class="item_title_decr">
+                Вникаем в проблему заказчика. Даем рекомендации о целесообразности ремонта.
+              </div>
+            </div>
           </div>
         </div>
-       
+        <div class="col-md-4">
+          <div class="section_4_item">
+            <div class="item_circle">2</div>
+            <div class="item_decr">
+              <div class="item_title">Честность</div>
+              <div class="item_title_decr">
+                Достоверная диагностика. Честно говорим о качестве применяемых запчастей.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="section_4_item">
+            <div class="item_circle">3</div>
+            <div class="item_decr">
+              <div class="item_title">Оперативность</div>
+              <div class="item_title_decr">
+                Стараемся выполнять ремонт максимально быстро, но без потери качества
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="section_4_item">
+            <div class="item_circle">4</div>
+            <div class="item_decr">
+              <div class="item_title">Надежность</div>
+              <div class="item_title_decr">
+                Соблюдаем технологические процессы. Тщательно тестируем устройство после ремонта.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="section_4_item">
+            <div class="item_circle">5</div>
+            <div class="item_decr">
+              <div class="item_title">Гарантии</div>
+              <div class="item_title_decr">
+                Предоставляем гарантию на все виды работ. На оригинальные запчасти до 6 месяцев.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="section_4_item">
+            <div class="item_circle">6</div>
+            <div class="item_decr">
+              <div class="item_title">Поддержка</div>
+              <div class="item_title_decr">
+                Наши клиенты консультируются с нами по любым вопросам, касательно работы их устройств.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </section>
+
+  <section class="section_5">
+    <div class="container">
+      <div class="section_5_title">
+        Наши услуги:
+      </div>
+      <div class="accord_wrapper">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapse-1">
+                Замена экрана в телефоне
+              </a>
+            </div>
+            <div id="collapse-1" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">Samsund</div>
+                  <div class="card_item_phone">Explay</div>
+                  <div class="card_item_phone">Nokia</div>
+                  <div class="card_item_phone">Xiaomy</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-2">
+                Замена аккумулятора в телефоне
+              </a>
+            </div>
+            <div id="collapse-2" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-3">
+                Диагностика телефона
+              </a>
+            </div>
+            <div id="collapse-3" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-4">
+                Замена динамиков в телефоне
+              </a>
+            </div>
+            <div id="collapse-4" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-5">
+                Замена разъема в телефоне
+              </a>
+            </div>
+            <div id="collapse-5" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-6">
+                Нанесение защитной пленки, стекла на телефон
+              </a>
+            </div>
+            <div id="collapse-6" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-7">
+                Перепрошивка телефона
+              </a>
+            </div>
+            <div id="collapse-7" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapse-8">
+                Разблокировка телефона
+              </a>
+            </div>
+            <div id="collapse-8" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card_wrapper">
+                  <div class="card_item_phone">dsfsdfsdf</div>
+                  <div class="card_item_price"> 34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- <section class="section_6">
+    <div class="section_6_title">Популярные модели для ремонта</div>
+
+    <div class="slider">
+      <div class="slider_item">1</div>
+      <div class="slider_item">2</div>
+      <div class="slider_item">3</div>
+      <div class="slider_item">4</div>
+      <div class="slider_item">5</div>
+    </div>
   </section> -->
-
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
