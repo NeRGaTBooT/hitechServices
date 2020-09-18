@@ -10,12 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-  <section class="section_1">
+  <section class="section_1" id="section_1">
     <header class="header">
       <div class="container">
         <div class="row">
@@ -25,11 +27,11 @@
           <div class="col-md-5 offset-md-3">
             <nav class="nav">
               <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Клиентам</a></li>
+                <li><a href="#section_1">Главная</a></li>
+                <li><a href="#section_2">О нас</a></li>
+                <li><a href="#section_5">Услуги</a></li>
+                <li><a href="#section_7">Контакты</a></li>
+                <li><a href="#section_4">Клиентам</a></li>
               </ul>
             </nav>
           </div>
@@ -66,7 +68,7 @@
     </div>
   </section>
 
-  <section class="section_2">
+  <section class="section_2" id="section_2">
     <div class="container">
       <div class="section_2_title">Несколько слов о нас</div>
 
@@ -113,7 +115,7 @@
     </div>
   </section>
 
-  <section class="section_4">
+  <section class="section_4" id="section_4">
     <div class="container">
       <div class="section_4_title">Причины выбрать наш сервис</div>
       <div class="row">
@@ -188,7 +190,7 @@
     </div>
   </section>
 
-  <section class="section_5">
+  <section class="section_5" id="section_5">
     <div class="container">
       <div class="section_5_title">
         Наши услуги:
@@ -201,14 +203,23 @@
                 Замена экрана в телефоне
               </a>
             </div>
-            <div id="collapse-1" class="collapse" data-parent="#accordion">
+            <div id="collapse-1" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">Samsund</div>
-                  <div class="card_item_phone">Explay</div>
-                  <div class="card_item_phone">Nokia</div>
-                  <div class="card_item_phone">Xiaomy</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -219,11 +230,23 @@
                 Замена аккумулятора в телефоне
               </a>
             </div>
-            <div id="collapse-2" class="collapse" data-parent="#accordion">
+            <div id="collapse-2" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -234,11 +257,23 @@
                 Диагностика телефона
               </a>
             </div>
-            <div id="collapse-3" class="collapse" data-parent="#accordion">
+            <div id="collapse-3" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,11 +285,23 @@
                 Замена динамиков в телефоне
               </a>
             </div>
-            <div id="collapse-4" class="collapse" data-parent="#accordion">
+            <div id="collapse-4" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -266,11 +313,23 @@
                 Замена разъема в телефоне
               </a>
             </div>
-            <div id="collapse-5" class="collapse" data-parent="#accordion">
+            <div id="collapse-5" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -282,11 +341,23 @@
                 Нанесение защитной пленки, стекла на телефон
               </a>
             </div>
-            <div id="collapse-6" class="collapse" data-parent="#accordion">
+            <div id="collapse-6" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -298,11 +369,23 @@
                 Перепрошивка телефона
               </a>
             </div>
-            <div id="collapse-7" class="collapse" data-parent="#accordion">
+            <div id="collapse-7" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -314,11 +397,23 @@
                 Разблокировка телефона
               </a>
             </div>
-            <div id="collapse-8" class="collapse" data-parent="#accordion">
+            <div id="collapse-8" class="collapse" >
               <div class="card-body">
                 <div class="card_wrapper">
-                  <div class="card_item_phone">dsfsdfsdf</div>
-                  <div class="card_item_price"> 34</div>
+                  <div class="flex-child">
+                    <div class="card_phone card_title">Марка телефона</div>
+                    <div class="card_phone">Huawei Y9 Prime</div>
+                    <div class="card_phone">Apple iPhone 5</div>
+                    <div class="card_phone">Apple iPhone 7 Plus</div>
+                    <div class="card_phone">Apple iPhone X</div>
+                  </div>
+                  <div class="flex-child">
+                    <div class="card_price card_title">Цена</div>
+                    <div class="card_price">20р.</div>
+                    <div class="card_price">40р.</div>
+                    <div class="card_price">43р.</div>
+                    <div class="card_price">60р.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -327,17 +422,122 @@
       </div>
   </section>
 
-  <!-- <section class="section_6">
+  <section class="section_6">
     <div class="section_6_title">Популярные модели для ремонта</div>
 
-    <div class="slider">
-      <div class="slider_item">1</div>
-      <div class="slider_item">2</div>
-      <div class="slider_item">3</div>
-      <div class="slider_item">4</div>
-      <div class="slider_item">5</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="slider">
+            <div class="slider_item">
+              <img src="img/phone1.png" alt="">
+              <div class="slider_title">Huawei Y9 Prime</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone2.png" alt="">
+              <div class="slider_title">Huawei Mate 20 Pro</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone3.png" alt="">
+              <div class="slider_title">Apple iPhone 7 Plus</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone4.png" alt="">
+              <div class="slider_title">Huawei Mate 20 Pro</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone5.png" alt="">
+              <div class="slider_title">Huawei P Smart Z</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone6.png" alt="">
+              <div class="slider_title">Redmi Note 5 Black</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone7.png" alt="">
+              <div class="slider_title">Coolpad Cool 5</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone8.png" alt="">
+              <div class="slider_title">Apple iPhone X</div>
+            </div>
+            <div class="slider_item">
+              <img src="img/phone9.png" alt="">
+              <div class="slider_title">Apple iPhone 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section> -->
+  </section>
+
+  <footer class="footer" id="section_7">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="footer_info_block">
+            <div class="footer_info_block_title"><img src="img/info.png" alt="">Информация для покупателя</div>
+            <div class="footer_info_block_decr">
+              Юридическое лицо ООО «Сервис Плюс Сервис» <br>
+              Беларусь Минская область Минск пр. Независимости, 131/1 <br>
+              Дата регистрации в Торговом реестре/Реестре бытовых услуг: 23.12.2016 <br>
+              Номер в Торговом реестре/Реестре бытовых услуг/Регистре производителей товаров: 192751348, Республика
+              Беларусь <br>
+              Регистрационный номер УНП: 192751348 <br>
+              Регистрационный орган: Минский городской исполнительный комитет <br>
+              Дата регистрации компании: 28.02.2008 <br>
+              Местонахождение книги замечаний и предложений: пр. Независимости, 131/1
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="footer_time">
+            <ul>
+              <li class="footer_time_title"><img src="img/calendar.png" alt="">Режим работы:</li>
+              <li>День Время работы</li>
+              <li>Понедельник 10:00 — 19:00</li>
+              <li>Вторник 10:00 — 19:00</li>
+              <li>Среда 10:00 — 19:00</li>
+              <li>Четверг 10:00 — 19:00</li>
+              <li>Пятница 10:00 — 19:00</li>
+              <li>Суббота 10:00 — 15:00</li>
+              <li>Воскресенье Выходной</li>
+            </ul>
+          </div>
+          
+
+        </div>
+        <div class="col-md-3">
+          <div class="footer_email_block">
+            <div class="footer_number">
+              <ul>
+                <li class="footer_number_title"><img src="img/user.png" alt="">Администратор</li>
+                <li>+375293722872</li>
+                <li>пр. Независимости, 131/1</li>
+                <li>+375173268088</li>
+                <li>пр. Независимости, 131/1</li>
+                <li>+375297661147</li>
+                <li>ул. Чкалова, д. 12</li>
+                <li>+375172131351</li>
+                <li>ул. Чкалова, д. 12 </li>
+              </ul>
+              <div class="footer_site">www.gsm-pda.by</div>
+              <div class="footer_email">gsm-pda@yandex.by</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 offset-md-6">
+          <div class="social">
+            <a href="https://vk.com/hitekservis"  target="_blank"><img src="img/vk.png" alt=""></a>
+            <a href="https://www.facebook.com/hitekservis/" target="_blank"><img src="img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/hitekservis/" target="_blank"><img src="img/instagram.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCpeOXCchZ9ADeC5LvBGYczA" target="_blank"><img src="img/youtube-play.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
