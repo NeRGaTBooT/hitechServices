@@ -1,3 +1,4 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -400,6 +401,11 @@ h6 {
 ul {
     list-style: none;
 }
+button,
+button:active,
+button:focus {
+    outline: none;
+}
 body {
     font-family: "Montserrat", sans-serif;
     color: #525252;
@@ -414,7 +420,7 @@ body {
     background-position: center center;
     background-attachment: fixed;
     padding-bottom: 40px;
-    min-height: 800px;
+    height: 100vh;
 }
 .section_1 .header {
     background: rgba(0, 0, 0, 0.7);
@@ -445,10 +451,12 @@ body {
     font-weight: bold;
     font-size: 50px;
     line-height: 60px;
+    text-shadow: 6px 6px 6px #000;
 }
 .section_1 .section_1_title .section_1_title_decr {
     font-size: 20px;
     margin-top: 20px;
+    text-shadow: 6px 6px 6px #000;
 }
 .section_1 .section_1_title .form {
     margin-top: 80px;
@@ -479,8 +487,10 @@ body {
     border: 1px solid #000;
     margin-bottom: 15px;
     padding: 5px;
+    border: none;
 }
 .section_1 .section_1_title .form .disrepair {
+    border: none;
     border-radius: 10px;
     width: 100%;
     resize: none;
@@ -495,6 +505,16 @@ body {
     font-size: 14px;
     font-weight: bold;
     margin-top: 15px;
+    border: none;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.section_1 .section_1_title .form .form_btn:hover {
+    background-color: #116d97;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 .section_2 {
     position: relative;
@@ -681,13 +701,20 @@ body {
     padding: 60px 0;
     font-size: 14px;
 }
-.footer img {
+.footer span {
     margin-right: 10px;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 .footer .footer_info_block .footer_info_block_title {
     font-size: 18px;
     font-weight: 600;
+}
+.footer .footer_info_block .footer_info_block_title span {
+    vertical-align: middle;
+}
+.footer .footer_info_block .footer_info_block_decr {
+    margin-top: 10px;
 }
 .footer .footer_email_block {
     margin-top: 60px;
@@ -699,6 +726,12 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
+.footer .footer_email_block .footer_number .footer_number_title span {
+    vertical-align: middle;
+}
+.footer .footer_email_block .footer_number .footer_number_time {
+    margin-top: 10px;
+}
 .footer .footer_time {
     font-size: 16px;
 }
@@ -706,31 +739,55 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
+.footer .footer_time .footer_time_title span {
+    vertical-align: middle;
+}
+.footer .footer_time .footer_time_descr {
+    margin-top: 10px;
+}
 .footer .social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
     height: 100%;
 }
-.footer .social a {
-    display: block;
-}
-.footer .social a img {
-    width: 32px;
-    height: 38px;
+.footer .social a span {
+    color: #ffffff;
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
-.footer .social a img:hover {
+.footer .social a span:hover {
+    opacity: 0.7;
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
-    opacity: 0.4;
+}
+.btn_top_blue {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 999;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: #0b92d2;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 40px;
+    border-radius: 10px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.btn_top_blue:hover {
+    background-color: #116d97;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
